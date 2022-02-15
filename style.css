@@ -26,3 +26,13 @@
   width: 60px;
   height: 60px;
 }
+
+.lightbulb {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+}
+
+.on {
+  background-color: yellow;
+}

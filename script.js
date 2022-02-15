@@ -16,6 +16,8 @@ snackButtons.forEach((button) => {
   });
 });
 
+//try other way too again
+
 //#2
 const form = document.querySelector(".two form");
 const bank = document.querySelector(".bank");
@@ -31,4 +33,31 @@ form.addEventListener("submit", (event) => {
     newCoin.textContent = whichCoin;
     bank.append(newCoin);
   }
+});
+
+//#3
+const on = document.querySelector(".on-switch");
+const off = document.querySelector(".off-switch");
+const toggle = document.querySelector(".toggle-switch");
+const end = document.querySelector(".end-switch");
+const lightbulb = document.querySelector(".lightbulb");
+
+on.addEventListener("click", () => {
+  lightbulb.classList.add("on");
+});
+
+off.addEventListener("click", () => {
+  lightbulb.classList.remove("on");
+});
+
+toggle.addEventListener("click", () => {
+  lightbulb.classList.toggle("on");
+});
+
+end.addEventListener("click", () => {
+  lightbulb.remove();
+  on.disabled = true;
+  off.disabled = true;
+  toggle.disabled = true;
+  end.disabled = true;
 });
